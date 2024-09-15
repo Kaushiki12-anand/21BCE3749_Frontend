@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trademarkia Search Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/68e17bfba5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="" id="logo_img">
+        </div>
+        <div class="bar">
+            <input type="text" class="search_bar" style="font-family: FontAwesome;" placeholder="&#xf002 Search Trademark Here eg. Mickey Mouse">
+            <button class="btn1">Search</button>
+        </div>
+    </div>
+    <div class="line_hor1"></div>
+    <div class="section">
+        <div class="line">
+            <p class="info">About 159 Trademarks found for "nike"</p>
+        </div>
+    </div>
+    <div class="line_hor2">
+    </div>
+    <div class="section">
+        <div class="line">
+            <p class="info" id="also">Also try searching for: </p>
+            <button class="btn2">nike*</button>
+            <button class="btn2">*ike</button>
+        </div>
+    </div>
+    <div class="filtering">
+        <button class="filter_btn"><i class="fa-solid fa-filter"></i>Filter</button>
+        <button class="btn3"><i class="fa-solid fa-share-nodes"></i></button>
+        <button class="btn3"><i class="fa-solid fa-list"></i></button>
+    </div>
+    <div class="main_area">
+        <div class="row">
+            <div class="col-6">
+                <ul class="list">
+                    <li class="head">Mark</li>
+                    <li class="head head1">Details</li>
+                    <li class="head head1">Status</li>
+                    <li class="head head1">Class/Description</li>
+                </ul>
+                <div class="line_hor3"></div>
+            </div>
+            <div class="col-4">
+                <div class="status">
+                    <h5 class="sta">Status</h5>
+                    <button class="arp" id="all">All</button>
+                    <button class="arp" id="reg2"><i class="fa-solid fa-circle" id="reg"></i>Registered</button>
+                    <button class="arp" id="pend2"><i class="fa-solid fa-circle" id="pend"></i>Pending</button><br>
+                    <button class="ao" id="aba2"><i class="fa-solid fa-circle" id="aba"></i>Abandoned</button>
+                    <button class="ao" id="oth2"><i class="fa-solid fa-circle" id="oth"></i>Others</button>
+                </div>
+                <div class="owner">
+                    <ul class="list">
+                        <li class="head">Owners</li>
+                        <li class="head head2">Law Firms</li>
+                        <li class="head head2">Attorneys</li>
+                        <div class="line_hor3"></div>
+                    </ul>
+                    <input type="text" placeholder="Search Owner" class="new_bar">
+                    <br>
+                    <ul class="list">
+                        <li class="val"><input type="checkbox" name="tes" id="tesla" >Tesla Inc.</li>
+                        <li class="val"><input type="checkbox" name="lf" id="legal" >LEGALFORCE RAPC.</li>
+                        <li class="val"><input type="checkbox" name="spa2" id="space2" >SpaceX Inc.</li>
+                        <li class="val"><input type="checkbox" name="spa3" id="space3" >SpaceX Inc.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
